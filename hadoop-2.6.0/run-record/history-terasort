@@ -1,0 +1,318 @@
+slave15:
+slave1:
+slave17:
+slave19:
+slave3:
+slave10:
+slave20:
+slave18:
+slave6:
+slave2:
+slave16:
+slave12:
+slave5:
+slave13:
+slave4:
+slave11:
+    Minion did not return. [Not connected]
+slave9:
+    Minion did not return. [Not connected]
+slave14:
+    Minion did not return. [Not connected]
+slave8:
+    Minion did not return. [Not connected]
+rmr: DEPRECATED: Please use 'rm -r' instead.
+rmr: DEPRECATED: Please use 'rm -r' instead.
+rmr: DEPRECATED: Please use 'rm -r' instead.
+20/11/10 14:12:08 INFO fs.TrashPolicyDefault: Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+rmr: File does not exist: hdfs://master:9000/terasort-output/0
+rmr: `/terasort-output/0': No such file or directory
+20/11/10 14:12:09 INFO terasort.TeraSort: starting
+20/11/10 14:12:09 INFO terasort.TeraSort: starting
+20/11/10 14:12:09 INFO terasort.TeraSort: starting
+20/11/10 14:12:11 INFO input.FileInputFormat: Total input paths to process : 2
+20/11/10 14:12:11 INFO input.FileInputFormat: Total input paths to process : 2
+20/11/10 14:12:11 INFO input.FileInputFormat: Total input paths to process : 2
+20/11/10 14:12:11 WARN hdfs.DFSClient: DataStreamer Exception
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.LeaseExpiredException): No lease on /terasort-output/0/_partition.lst (inode 4360185): File does not exist. Holder DFSClient_NONMAPREDUCE_-845885206_1 does not have any open files.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkLease(FSNamesystem.java:3516)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.analyzeFileState(FSNamesystem.java:3313)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3169)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:641)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:482)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:232)
+	at com.sun.proxy.$Proxy9.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.addBlock(ClientNamenodeProtocolTranslatorPB.java:399)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:187)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy10.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.locateFollowingBlock(DFSOutputStream.java:1532)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1349)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:588)
+20/11/10 14:12:11 ERROR terasort.TeraSort: No lease on /terasort-output/0/_partition.lst (inode 4360185): File does not exist. Holder DFSClient_NONMAPREDUCE_-845885206_1 does not have any open files.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkLease(FSNamesystem.java:3516)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.analyzeFileState(FSNamesystem.java:3313)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3169)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:641)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:482)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+
+20/11/10 14:12:11 WARN hdfs.DFSClient: DataStreamer Exception
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.hdfs.server.namenode.LeaseExpiredException): No lease on /terasort-output/0/_partition.lst (inode 4360186): File does not exist. Holder DFSClient_NONMAPREDUCE_-1727257065_1 does not have any open files.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkLease(FSNamesystem.java:3516)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.analyzeFileState(FSNamesystem.java:3313)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3169)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:641)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:482)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:232)
+	at com.sun.proxy.$Proxy9.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.addBlock(ClientNamenodeProtocolTranslatorPB.java:399)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:187)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy10.addBlock(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.locateFollowingBlock(DFSOutputStream.java:1532)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1349)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:588)
+20/11/10 14:12:11 ERROR terasort.TeraSort: No lease on /terasort-output/0/_partition.lst (inode 4360186): File does not exist. Holder DFSClient_NONMAPREDUCE_-1727257065_1 does not have any open files.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkLease(FSNamesystem.java:3516)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.analyzeFileState(FSNamesystem.java:3313)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock(FSNamesystem.java:3169)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.addBlock(NameNodeRpcServer.java:641)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.addBlock(ClientNamenodeProtocolServerSideTranslatorPB.java:482)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+
+
+real	0m3.379s
+user	0m5.304s
+sys	0m0.416s
+
+real	0m3.516s
+user	0m5.408s
+sys	0m0.344s
+20/11/10 14:12:13 INFO client.RMProxy: Connecting to ResourceManager at master/10.0.0.27:8032
+20/11/10 14:12:14 INFO mapreduce.JobSubmitter: number of splits:448
+20/11/10 14:12:14 INFO Configuration.deprecation: mapred.map.tasks.speculative.execution is deprecated. Instead, use mapreduce.map.speculative
+20/11/10 14:12:14 INFO Configuration.deprecation: mapred.reduce.tasks.speculative.execution is deprecated. Instead, use mapreduce.reduce.speculative
+20/11/10 14:12:14 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1603168482046_0033
+20/11/10 14:12:14 INFO impl.YarnClientImpl: Submitted application application_1603168482046_0033
+20/11/10 14:12:14 INFO mapreduce.Job: The url to track the job: http://master:50030/proxy/application_1603168482046_0033/
+20/11/10 14:12:14 INFO mapreduce.Job: Running job: job_1603168482046_0033
+20/11/10 14:12:21 INFO mapreduce.Job: Job job_1603168482046_0033 running in uber mode : false
+20/11/10 14:12:21 INFO mapreduce.Job:  map 0% reduce 0%
+20/11/10 14:12:32 INFO mapreduce.Job:  map 1% reduce 0%
+20/11/10 14:12:34 INFO mapreduce.Job:  map 2% reduce 0%
+20/11/10 14:12:35 INFO mapreduce.Job:  map 3% reduce 0%
+20/11/10 14:12:36 INFO mapreduce.Job:  map 4% reduce 0%
+20/11/10 14:12:37 INFO mapreduce.Job:  map 9% reduce 0%
+20/11/10 14:12:38 INFO mapreduce.Job:  map 11% reduce 0%
+20/11/10 14:12:39 INFO mapreduce.Job:  map 12% reduce 0%
+20/11/10 14:12:40 INFO mapreduce.Job:  map 14% reduce 0%
+20/11/10 14:12:41 INFO mapreduce.Job:  map 15% reduce 0%
+20/11/10 14:12:42 INFO mapreduce.Job:  map 17% reduce 0%
+20/11/10 14:12:43 INFO mapreduce.Job:  map 19% reduce 0%
+20/11/10 14:12:44 INFO mapreduce.Job:  map 21% reduce 0%
+20/11/10 14:12:45 INFO mapreduce.Job:  map 24% reduce 0%
+20/11/10 14:12:46 INFO mapreduce.Job:  map 26% reduce 0%
+20/11/10 14:12:47 INFO mapreduce.Job:  map 27% reduce 0%
+20/11/10 14:12:48 INFO mapreduce.Job:  map 29% reduce 0%
+20/11/10 14:12:49 INFO mapreduce.Job:  map 31% reduce 0%
+20/11/10 14:12:50 INFO mapreduce.Job:  map 33% reduce 0%
+20/11/10 14:12:51 INFO mapreduce.Job:  map 36% reduce 0%
+20/11/10 14:12:52 INFO mapreduce.Job:  map 37% reduce 0%
+20/11/10 14:12:53 INFO mapreduce.Job:  map 41% reduce 0%
+20/11/10 14:12:54 INFO mapreduce.Job:  map 44% reduce 0%
+20/11/10 14:12:55 INFO mapreduce.Job:  map 46% reduce 0%
+20/11/10 14:12:56 INFO mapreduce.Job:  map 47% reduce 0%
+20/11/10 14:12:57 INFO mapreduce.Job:  map 49% reduce 0%
+20/11/10 14:12:58 INFO mapreduce.Job:  map 51% reduce 0%
+20/11/10 14:12:59 INFO mapreduce.Job:  map 53% reduce 0%
+20/11/10 14:13:00 INFO mapreduce.Job:  map 54% reduce 0%
+20/11/10 14:13:01 INFO mapreduce.Job:  map 57% reduce 0%
+20/11/10 14:13:02 INFO mapreduce.Job:  map 58% reduce 0%
+20/11/10 14:13:03 INFO mapreduce.Job:  map 61% reduce 0%
+20/11/10 14:13:04 INFO mapreduce.Job:  map 64% reduce 0%
+20/11/10 14:13:05 INFO mapreduce.Job:  map 65% reduce 0%
+20/11/10 14:13:06 INFO mapreduce.Job:  map 67% reduce 0%
+20/11/10 14:13:07 INFO mapreduce.Job:  map 69% reduce 0%
+20/11/10 14:13:08 INFO mapreduce.Job:  map 71% reduce 0%
+20/11/10 14:13:09 INFO mapreduce.Job:  map 72% reduce 0%
+20/11/10 14:13:10 INFO mapreduce.Job:  map 74% reduce 0%
+20/11/10 14:13:11 INFO mapreduce.Job:  map 75% reduce 0%
+20/11/10 14:13:13 INFO mapreduce.Job:  map 78% reduce 0%
+20/11/10 14:13:14 INFO mapreduce.Job:  map 79% reduce 0%
+20/11/10 14:13:15 INFO mapreduce.Job:  map 80% reduce 0%
+20/11/10 14:13:16 INFO mapreduce.Job:  map 81% reduce 0%
+20/11/10 14:13:17 INFO mapreduce.Job:  map 83% reduce 0%
+20/11/10 14:13:18 INFO mapreduce.Job:  map 84% reduce 0%
+20/11/10 14:13:19 INFO mapreduce.Job:  map 85% reduce 0%
+20/11/10 14:13:20 INFO mapreduce.Job:  map 86% reduce 0%
+20/11/10 14:13:21 INFO mapreduce.Job:  map 87% reduce 0%
+20/11/10 14:13:22 INFO mapreduce.Job:  map 88% reduce 0%
+20/11/10 14:13:24 INFO mapreduce.Job:  map 89% reduce 0%
+20/11/10 14:13:25 INFO mapreduce.Job:  map 90% reduce 0%
+20/11/10 14:13:26 INFO mapreduce.Job:  map 91% reduce 0%
+20/11/10 14:13:27 INFO mapreduce.Job:  map 92% reduce 0%
+20/11/10 14:13:29 INFO mapreduce.Job:  map 93% reduce 0%
+20/11/10 14:13:31 INFO mapreduce.Job:  map 94% reduce 0%
+20/11/10 14:13:32 INFO mapreduce.Job:  map 95% reduce 0%
+20/11/10 14:13:35 INFO mapreduce.Job:  map 96% reduce 0%
+20/11/10 14:13:38 INFO mapreduce.Job:  map 97% reduce 0%
+20/11/10 14:13:43 INFO mapreduce.Job:  map 98% reduce 0%
+20/11/10 14:13:47 INFO mapreduce.Job:  map 99% reduce 0%
+20/11/10 14:13:53 INFO mapreduce.Job:  map 100% reduce 0%
+20/11/10 14:14:12 INFO mapreduce.Job:  map 100% reduce 1%
+20/11/10 14:14:13 INFO mapreduce.Job:  map 100% reduce 4%
+20/11/10 14:14:14 INFO mapreduce.Job:  map 100% reduce 5%
+20/11/10 14:14:15 INFO mapreduce.Job:  map 100% reduce 7%
+20/11/10 14:14:16 INFO mapreduce.Job:  map 100% reduce 9%
+20/11/10 14:14:18 INFO mapreduce.Job:  map 100% reduce 10%
+20/11/10 14:14:19 INFO mapreduce.Job:  map 100% reduce 11%
+20/11/10 14:14:20 INFO mapreduce.Job:  map 100% reduce 12%
+20/11/10 14:14:21 INFO mapreduce.Job:  map 100% reduce 13%
+20/11/10 14:14:22 INFO mapreduce.Job:  map 100% reduce 14%
+20/11/10 14:14:23 INFO mapreduce.Job:  map 100% reduce 15%
+20/11/10 14:14:25 INFO mapreduce.Job:  map 100% reduce 17%
+20/11/10 14:14:27 INFO mapreduce.Job:  map 100% reduce 18%
+20/11/10 14:14:28 INFO mapreduce.Job:  map 100% reduce 19%
+20/11/10 14:14:29 INFO mapreduce.Job:  map 100% reduce 20%
+20/11/10 14:14:30 INFO mapreduce.Job:  map 100% reduce 21%
+20/11/10 14:14:31 INFO mapreduce.Job:  map 100% reduce 22%
+20/11/10 14:14:32 INFO mapreduce.Job:  map 100% reduce 23%
+20/11/10 14:14:34 INFO mapreduce.Job:  map 100% reduce 25%
+20/11/10 14:14:36 INFO mapreduce.Job:  map 100% reduce 26%
+20/11/10 14:14:37 INFO mapreduce.Job:  map 100% reduce 27%
+20/11/10 14:14:38 INFO mapreduce.Job:  map 100% reduce 28%
+20/11/10 14:14:40 INFO mapreduce.Job:  map 100% reduce 30%
+20/11/10 14:14:41 INFO mapreduce.Job:  map 100% reduce 31%
+20/11/10 14:14:43 INFO mapreduce.Job:  map 100% reduce 34%
+20/11/10 14:14:44 INFO mapreduce.Job:  map 100% reduce 35%
+20/11/10 14:14:46 INFO mapreduce.Job:  map 100% reduce 39%
+20/11/10 14:14:47 INFO mapreduce.Job:  map 100% reduce 42%
+20/11/10 14:14:49 INFO mapreduce.Job:  map 100% reduce 51%
+20/11/10 14:14:50 INFO mapreduce.Job:  map 100% reduce 59%
+20/11/10 14:14:52 INFO mapreduce.Job:  map 100% reduce 64%
+20/11/10 14:14:53 INFO mapreduce.Job:  map 100% reduce 67%
+20/11/10 14:14:55 INFO mapreduce.Job:  map 100% reduce 73%
+20/11/10 14:14:56 INFO mapreduce.Job:  map 100% reduce 78%
+20/11/10 14:14:58 INFO mapreduce.Job:  map 100% reduce 81%
+20/11/10 14:14:59 INFO mapreduce.Job:  map 100% reduce 85%
+20/11/10 14:15:01 INFO mapreduce.Job:  map 100% reduce 87%
+20/11/10 14:15:02 INFO mapreduce.Job:  map 100% reduce 90%
+20/11/10 14:15:04 INFO mapreduce.Job:  map 100% reduce 91%
+20/11/10 14:15:05 INFO mapreduce.Job:  map 100% reduce 94%
+20/11/10 14:15:06 INFO mapreduce.Job:  map 100% reduce 95%
+20/11/10 14:15:08 INFO mapreduce.Job:  map 100% reduce 96%
+20/11/10 14:15:10 INFO mapreduce.Job:  map 100% reduce 97%
+20/11/10 14:15:14 INFO mapreduce.Job:  map 100% reduce 99%
+20/11/10 14:15:17 INFO mapreduce.Job:  map 100% reduce 100%
+20/11/10 14:15:30 INFO mapreduce.Job: Job job_1603168482046_0033 completed successfully
+20/11/10 14:15:30 INFO mapreduce.Job: Counters: 50
+	File System Counters
+		FILE: Number of bytes read=31200292918
+		FILE: Number of bytes written=62455460214
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=30000047488
+		HDFS: Number of bytes written=30000000000
+		HDFS: Number of read operations=1524
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=120
+	Job Counters 
+		Launched map tasks=448
+		Launched reduce tasks=60
+		Data-local map tasks=439
+		Rack-local map tasks=9
+		Total time spent by all maps in occupied slots (ms)=5800838
+		Total time spent by all reduces in occupied slots (ms)=3668563
+		Total time spent by all map tasks (ms)=5800838
+		Total time spent by all reduce tasks (ms)=3668563
+		Total vcore-seconds taken by all map tasks=5800838
+		Total vcore-seconds taken by all reduce tasks=3668563
+		Total megabyte-seconds taken by all map tasks=5940058112
+		Total megabyte-seconds taken by all reduce tasks=3756608512
+	Map-Reduce Framework
+		Map input records=300000000
+		Map output records=300000000
+		Map output bytes=30600000000
+		Map output materialized bytes=31200161280
+		Input split bytes=47488
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=300000000
+		Reduce shuffle bytes=31200161280
+		Reduce input records=300000000
+		Reduce output records=300000000
+		Spilled Records=600000000
+		Shuffled Maps =26880
+		Failed Shuffles=0
+		Merged Map outputs=26880
+		GC time elapsed (ms)=121618
+		CPU time spent (ms)=3430200
+		Physical memory (bytes) snapshot=133523259392
+		Virtual memory (bytes) snapshot=528243625984
+		Total committed heap usage (bytes)=101026103296
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=30000000000
+	File Output Format Counters 
+		Bytes Written=30000000000
+20/11/10 14:15:30 INFO terasort.TeraSort: done
+
+real	3m22.045s
+user	0m9.229s
+sys	0m0.836s
